@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="styles.css" type="text/css">
+<body>
+    <h1 id="title">Formulario de encuesta</h1>
+    <p id="descripción">Formulario de prueba</p>
+    
+    <form id="survey-form">
+    <fieldset>
+        <legend>Datos Personales</legend>
+      <label id="name-label" for="name">Nombre</label>
+      <input type="text" name="nombre" id="name" placeholder="Introduce tu nombre" required />
+      <p/>
+      <label id="email-label" for="email">Email de contacto</label>
+      <input type="email" name="email" id="email" placeholder="Introduce tu email" required />
+      <p/>
+      <label id="number-label" for="name">Número de teléfono</label>
+      <input type="number" name="numero" id="number" placeholder="Introduce tu número de teléfono" required />
+    </fieldset>
+    <p/>
+      <label for="trabajo">¿Cual es su empleo?</label>
+      <select id="dropdawn">
+        <option value="no-trabaja">No trabaja</option>
+        <option value="estudiante">Estudiante</option>
+        <option value="t-completo">Empleo a tiempo completo</option>
+        <option value="t-parcial">Empleo a tiempo parcial</option>
+      </select>
+    </form>
+</body>
