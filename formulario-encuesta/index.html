@@ -12,16 +12,27 @@
       <label id="email-label" for="email">Email de contacto</label>
       <input type="email" name="email" id="email" placeholder="Introduce tu email" required />
       <p/>
-      <label id="number-label" for="name">Número de teléfono</label>
-      <input type="number" name="numero" id="number" placeholder="Introduce tu número de teléfono" required />
+      <label id="number-label" for="telefono">Teléfono</label>
+      <input type="number" name="telefono" id="telefono" min="100000000" max="999999999" placeholder="Introduce tu telefono" required />
+      <p/>
+      <label for="name">Edad
+        <input id="edad" type="radio" name="edad">< 25
+        <input id="edad" type="radio" name="edad">25-30
+        <input id="edad" type="radio" name="edad">30-35
+        <input id="edad" type="radio" name="edad">35-40
+        <input id="edad" type="radio" name="edad">> 40
+      </label>
     </fieldset>
-    <p/>
-      <label for="trabajo">¿Cual es su empleo?</label>
+      <p/>
+      <label for="trabajo">¿Cuál es su empleo?</label>
       <select id="dropdawn">
         <option value="no-trabaja">No trabaja</option>
         <option value="estudiante">Estudiante</option>
         <option value="t-completo">Empleo a tiempo completo</option>
         <option value="t-parcial">Empleo a tiempo parcial</option>
       </select>
+      <p/>
+      <button type="submit" id="submit">Submit</button>
+      <button type="reset" id="reset">Reset</button>
     </form>
 </body>
