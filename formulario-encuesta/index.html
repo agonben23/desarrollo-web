@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="styles.css" type="text/css">
 <body>
     <h1 id="title">Formulario de encuesta</h1>
-    <p id="descripción">Formulario de prueba</p>
+    <p id="description">Formulario de prueba</p>
     
     <form id="survey-form">
     <fieldset>
@@ -25,12 +25,15 @@
     </fieldset>
       <p/>
       <label for="trabajo">¿Cuál es su empleo?</label>
-      <select id="dropdawn">
+      <select id="dropdown">
         <option value="no-trabaja">No trabaja</option>
         <option value="estudiante">Estudiante</option>
         <option value="t-completo">Empleo a tiempo completo</option>
         <option value="t-parcial">Empleo a tiempo parcial</option>
       </select>
+      <p/>
+      <label id="comments" for="comentario">Comentario</label>
+      <textarea id="comentario" placeholder="Ingrese aquí su comentario"></textarea>
       <p/>
       <button type="submit" id="submit">Submit</button>
       <button type="reset" id="reset">Reset</button>
