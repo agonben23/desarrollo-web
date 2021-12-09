@@ -13,24 +13,33 @@
       <input type="email" name="email" id="email" placeholder="Introduce tu email" required />
       <p/>
       <label id="number-label" for="telefono">Teléfono</label>
-      <input type="number" name="telefono" id="telefono" min="100000000" max="999999999" placeholder="Introduce tu telefono" required />
+      <input type="number" name="telefono" id="number" min="100000000" max="999999999" placeholder="Introduce tu telefono" required />
       <p/>
       <label for="name">Edad
-        <input id="edad" type="radio" name="edad">< 25
-        <input id="edad" type="radio" name="edad">25-30
-        <input id="edad" type="radio" name="edad">30-35
-        <input id="edad" type="radio" name="edad">35-40
-        <input id="edad" type="radio" name="edad">> 40
+        <input id="e-25" type="radio" name="edad" value="-25"> -25</input>
+        <input id="e25-30" type="radio" name="edad" value="25-30">25-30
+        <input id="e30-35" type="radio" name="edad" value="30-35">30-35
+        <input id="e35-40" type="radio" name="edad" value="35-40">35-40
+        <input id="e+40" type="radio" name="edad" value="+40"> + 40
       </label>
     </fieldset>
+    <p/>
+      
       <p/>
-      <label for="trabajo">¿Cuál es su empleo?</label>
-      <select id="dropdown">
+      <fieldset>
+        <legend>Datos adicionales</legend>
+        <label for="trabajo">¿Cuál es su empleo?</label>
+        <select id="dropdown">
         <option value="no-trabaja">No trabaja</option>
         <option value="estudiante">Estudiante</option>
         <option value="t-completo">Empleo a tiempo completo</option>
         <option value="t-parcial">Empleo a tiempo parcial</option>
-      </select>
+        </select>
+        <p/>
+        <input type="checkbox" name="casado" id="casado" value="si">Está casado/a
+        <p/>
+        <input type="checkbox" name="discapacidad" id="dc" value="si">Tiene alguna discapacidad
+      </fieldset>
       <p/>
       <label id="comments" for="comentario">Comentario</label>
       <textarea id="comentario" placeholder="Ingrese aquí su comentario"></textarea>
